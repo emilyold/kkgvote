@@ -1,0 +1,2 @@
+module PnmsHelper
+end

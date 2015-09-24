@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<body>
+
+
+ <div class="name">
+  <%= @pnm.name %>
+</div>
+
+
+<div style="text-align:center; padding:140px;">
+  <%= link_to up_pnm_path(@pnm),  class: "like", method: :put do %>
+  <button type="button" class="btn btn-success" aria-label="Left Align"> 
+    <span class="glyphicon glyphicon-heart " aria-hidden="true"></span> <!-- glyphicon-align-center -->
+  </button>
+  <% end %> 
+
+
+  <%= link_to down_pnm_path(@pnm), class: "like", method: :put do %>
+  <button type="button" id="myCheck" class="btn btn-danger" aria-label="Left Align"> 
+
+   <span class="glyphicon glyphicon-heart-empty glyphicon-align-center" aria-hidden="true"></span>
+   <!-- <span class="glyphicons glyphicons-heart-empty"></span> -->
+   <!-- <span class="badge">*</span> -->
+   <!-- here we change the color of the button -->
+ </button>
+ <%end%> 
+</div>
+
+</body>
