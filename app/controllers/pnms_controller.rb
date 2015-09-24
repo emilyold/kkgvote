@@ -1,6 +1,6 @@
 class PnmsController < ApplicationController
   before_action :set_pnm, only: [:show, :edit, :update, :destroy, :upvote, :downvote, :like]
-
+  before_action :authenticate_user!
   # GET /pnms
   # GET /pnms.json
   def index

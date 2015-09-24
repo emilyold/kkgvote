@@ -1,6 +1,6 @@
 class StaticsController < ApplicationController
   before_action :set_static, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /statics
   # GET /statics.json
   def index
