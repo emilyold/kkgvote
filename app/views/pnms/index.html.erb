@@ -14,12 +14,10 @@
     <% @pnms.each do |pnm| %>
       <tr>
         <td><%= pnm.name %></td>
-        <td><%= link_to 'Show', pnm %></td>
+        
         </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Pnm', new_pnm_path %>

@@ -4,15 +4,7 @@ class PnmsController < ApplicationController
   # GET /pnms
   # GET /pnms.json
   def index
-    if user_signed in?
-      if current_user.admin?
-        @pnms = Pnm.all
-        # ah-ha! here is where we show them what we want to show them 
-      
-      else
-        redirect_to static_path(1)
-      end
-    end
+    @pnms = Pnm.all
   end
 
   # GET /pnms/1
