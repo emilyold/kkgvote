@@ -4,7 +4,12 @@ class NotesController < ApplicationController
   # GET /notes
   # GET /notes.json
   def index
-    @notes = Note.all
+    if current_user.admin?
+      @notes = Note.all
+       # careful....need to have a note and a static created
+    else
+      redirect_to static_path(1)
+    end
   end
 
   # GET /notes/1

@@ -28,9 +28,28 @@
 
 	text-align: center;
     color: #f35626;
+
+
     background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-animation: hue 60s infinite linear;
-    font-size: 60px; 
+    font-size: 80px; 
+
+    -webkit-text-size-adjust: 160px; 
+
 }
+#ind-back{
+	/*padding-top: 10px;*/
+	/*margin: 0;*/
+	font-family: Helvetica, Arial, Tahoma, sans-serif; font-size: 62.5%; color: #333; text-align:left; 
+	background: url(https://res.cloudinary.com/hcbnkv7rr/image/upload/v1443128247/med_boy-valentine-owl_nksvsu.png) no-repeat;  
+	background-size: 380px auto;
+	background-position: 70% 40%; 
+  -webkit-background-size: left bottom;
+  -moz-background-size: left bottom;
+  -o-background-size: cover;
+  /*background-size: cover;*/
+
+  /*opacity*/
+}	
